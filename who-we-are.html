@@ -14,18 +14,23 @@
 </head>
 <body class="font-['Fira_Sans']">
   <!-- Header -->
-  <header class="flex items-center justify-between h-20 md:h-24 px-8">
-    <a href="index.html"><img src="images/logo.svg" alt=""></a>
-    <nav id="mainNavbar" >
-      <ul class="menu hidden md:flex items-center md:space-x-5 md:text-sm lg:space-x-7 lg:text-base xl:space-x-9">
-            <li class="item"><a href="./who-we-are.html">Who We Are</a></li>
-            <li class="item"><a href="#">Our Journey</a></li>
-            <li class="item"><a href="#">Resources</a></li>
-            <li class="item"><a href="#">Press & Media</a></li>
-            <li class="px-4 py-3 border-2 border-green-600 text-green-600 hover:bg-green-600 hover:text-white transition-all"><a href="donate.html">Support Us</a></li>
+  <header class="flex items-center  justify-between h-20 md:h-24">
+    <nav id="mainNavbar" class="w-full md:flex md:items-center md:justify-between">
+      <a class="" href="index.html"><img class="pl-8 md:pl-10" src="images/logo.svg" alt=""></a>
+      <ul id="myTopnav" class="hidden mr-8 md:flex fixed md:relative menu my-[-3.5em] md:my-0 text-center space-y-6 md:space-y-0 pt-8 md:pt-0 flex items-center justify-center flex-col md:flex-row w-screen md:w-fit h-screen md:h-fit bg-emerald-600 md:bg-transparent text-white md:text-black z-100 items-center md:space-x-5 md:text-sm lg:space-x-7 lg:text-base xl:space-x-9">
+            <img onclick="closeNavbar()" class="hover:cursor-pointer close absolute top-10 right-10 w-8 md:hidden" src="images/icons8-close-50.png" alt="">
+            <li class="item hover:underline"><a href="./who-we-are.html">Who We Are</a></li>
+            <li class="item hover:underline"><a href="#">Our Journey</a></li>
+            <li class="item hover:underline"><a href="#">Resources</a></li>
+            <li class="item hover:underline"><a href="#">Press & Media</a></li>
+            <li class="border-white hover:bg-white hover:text-emerald-600 w-fit px-4 py-3 border-2 md:border-green-600 md:text-green-600 md:hover:bg-green-600 md:hover:text-white transition-all"><a href="donate.html">Support Us</a></li>
       </ul>
-      <li class="toggle flex md:hidden"><a href="#"><img src="https://img.icons8.com/color/48/000000/menu--v4.png" class="w-8"/></a></li>
     </nav> 
+    <li class="toggle flex md:hidden">
+      <a href="javascript:void(0);" onclick="openNavbar()" class="icon hover:cursor-pointer">
+        <img src="https://img.icons8.com/color/48/000000/menu--v4.png" class="w-8 mr-8"/>
+      </a>
+    </li>
   </header>
   <!-- Who we are -->
   <section class="px-8 md:px-10 lg:px-16 md:flex w-full">
@@ -165,5 +170,18 @@
     </section>
     <p class="mt-8">Copyrights &copy Blackleads 2021</p>
   </footer>
+
+  <script>
+    /* Open the navbar */
+    function openNavbar() {
+      var openNavbar = document.getElementById("myTopnav");
+      openNavbar.classList.toggle("hidden");
+    }
+    /* Close the navbar */
+    function closeNavbar() {
+      var closeNavbar = document.getElementById("myTopnav");
+      closeNavbar.classList.toggle("hidden");
+    }
+  </script>
 </body>
 </html>
