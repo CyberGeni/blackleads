@@ -14,20 +14,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="font-['Fira_Sans']">
+<body class="font-['Fira_Sans'] overflow-x-hidden">
   <main>
-    <header class="flex items-center justify-between h-20 md:h-24 px-8">
-      <a href="index.html"><img src="images/logo.svg" alt=""></a>
-      <nav id="mainNavbar" >
-        <ul class="menu hidden md:flex items-center md:space-x-5 md:text-sm lg:space-x-7 lg:text-base xl:space-x-9">
-              <li class="item"><a href="./who-we-are.html">Who We Are</a></li>
-              <li class="item"><a href="#">Our Journey</a></li>
-              <li class="item"><a href="#">Resources</a></li>
-              <li class="item"><a href="#">Press & Media</a></li>
-              <li class="px-4 py-3 border-2 border-green-600 text-green-600 hover:bg-green-600 hover:text-white transition-all"><a href="donate.html">Support Us</a></li>
+    <header class="flex items-center justify-between h-20 md:h-24">
+      <nav id="mainNavbar" class="">
+        <a class="px-8" href="index.html"><img src="images/logo.svg" alt=""></a>
+      <!--  <a href="index.html"><img src="images/logo-white.svg" alt=""></a>  -->
+        <ul class="fixed menu my-[-5em] text-center space-y-6 pt-8 flex items-center justify-center flex-col w-screen h-screen bg-emerald-600 text-white z-100 md:flex items-center md:space-x-5 md:text-sm lg:space-x-7 lg:text-base xl:space-x-9">
+              <li class="item hover:underline"><a href="./who-we-are.html">Who We Are</a></li>
+              <li class="item hover:underline"><a href="#">Our Journey</a></li>
+              <li class="item hover:underline"><a href="#">Resources</a></li>
+              <li class="item hover:underline"><a href="#">Press & Media</a></li>
+              <li class="border-white hover:bg-white hover:text-emerald-600 w-fit px-4 py-3 border-2 md:border-green-600 md:text-green-600 md:hover:bg-green-600 md:hover:text-white transition-all"><a href="donate.html">Support Us</a></li>
         </ul>
-        <li class="toggle flex md:hidden"><a href="#"><img src="https://img.icons8.com/color/48/000000/menu--v4.png" class="w-8"/></a></li>
       </nav> 
+      <li class="toggle flex md:hidden"><a href="#"><img src="https://img.icons8.com/color/48/000000/menu--v4.png" class="w-8"/></a></li>
     </header>
       <!-- hero -->
       <section class="flex flex-col md:flex-row px-8 md:px-10 lg:px-12 mx-auto md:justify-around md:items-center">
