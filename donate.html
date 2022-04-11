@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackleads</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    
+    <!-- CSS Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-emerald-600 text-white font-['Fira_Sans']">
+    <header class="flex items-center justify-between h-20 md:h-24 px-8">
+        <a href="index.html"><img src="images/logo-white.svg" alt=""></a>
+    <!--    display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        background-color: seagreen;
+        margin-left: -86vw;
+        margin-top: -5vh; -->
+        <nav id="mainNavbar flex flex-col absolute">
+          <ul class="flex bg-emerald-600 text-white bg-emerald-600 md:flex items-center md:space-x-5 md:text-sm lg:space-x-7 lg:text-base xl:space-x-9">
+                <li class="item"><a href="./who-we-are.html">Who We Are</a></li>
+                <li class="item"><a href="#">Our Journey</a></li>
+                <li class="item"><a href="#">Resources</a></li>
+                <li class="item"><a href="#">Press & Media</a></li>
+                <li class="px-4 py-3 border-2 border-white text-white hover:bg-white hover:text-emerald-600 transition-all"><a href="#">Support Us</a></li>
+          </ul>
+          <li class="toggle flex md:hidden"><a href="#"><img src="https://img.icons8.com/color/32/444444/menu--v4.png" class="w-8"/></a></li>
+        </nav> 
+    </header>
+    <main class="px-8 md:px-10 lg:px-16 flex flex-col items-center justify-center h-3/4">
+        <p class="text-center w-2/3 my-4">Thank you for willing to support us. See how your donation can help us raise the next generation of stars.</p>
+        <section class="bg-[#FCC200] border-2 border-black text-black sm:flex">
+            <div class="p-6">
+                <img class="w-full max-w-lg" src="images/donuts.svg" alt="">
+                <p class="mt-2 text-center">A workshop isn’t complete without refreshments to keep our young leaders dentally engaged </p>
+            </div>
+            <div class="sm:border-l-2 border-l-black border-l-0 flex flex-wrap sm:block">
+                <div>
+                    <img class="border-t-2 border-t-black border-b-2 border-b-black sm:border-r-0 border-r-2 border-r-black w-full" src="images/hands-shaking.svg" alt="">
+                </div>
+                <div class="p-6 border-t-2 border-t-black sm:border-t-0">
+                    <p>Send donations to
+                        <br>
+                        <strong>
+                        2209215672
+                        <br>
+                        Zenith Bank
+                        <br>
+                        Onifade Firdaus
+                        </strong>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Orange ribbon at the bottom right. couldn't be position due to lack of mobile design screen -->
+        <!-- <img class="mt-[-6.5em] mr-[-45em] overflow-hidden" src="images/donate-ribbon.svg" alt=""> -->
+        
+    </main>
+    <footer class="my-5 flex flex-col items-center">
+        <img class="w-fit" src="images/logo-white.svg" alt="">
+        <p class="mt-3">Copyrights &copy Blackleads 2021</p>
+    </footer>
+    <script src="Js/script.js"></script>
+</body>
+</html>
